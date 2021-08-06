@@ -1,0 +1,70 @@
+<!-- chu thich -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Hi! I'm Hoàng Cương.</title>
+  </head>
+    <body style="background-color:rgb(232, 223, 233);">
+    <h1 id="heading1" style = "margin:center;text-align: center; color:rgb(3, 2, 5);" >LONG TRIPS</h1>
+    <h2 style = "margin:center;text-align: center;" > (Ký sự đi dạt từ Bắc vô Nam)</h2>
+     <p style = "margin:center;text-align: center; color:rgb(247, 55, 112);"> 
+      <i>
+       "Thời gian đẹp nhất của tuổi trẻ, là những tháng ngày được cùng nhau trưởng thành, vấp ngã và yêu thương.
+      <br>
+       Chúng ta đã sống những ngày tuổi trẻ như vậy đấy,
+       đời đẹp như một đóa hoa dù đến lúc tàn phai cũng đã từng rực rỡ"</p>
+     </i>
+          <hr>
+          <div class = "container">
+            <div class="row"><img id = "1" src = "xuyenviet/1.jpg" alt="image1"></div>
+            <div class="row"><img id = "2" src = "xuyenviet/2.jpg" alt="image2"></div>
+            <div class="row"><img id = "3" src = "xuyenviet/3.jpg" alt="image3"></div>
+            <div class="row"><img id = "4" src = "xuyenviet/4.jpg" alt="image4"></div>
+            <div class="row"><img id = "5" src = "xuyenviet/5.jpg" alt="image5"></div>
+            <div class="row"><img id = "6" src = "xuyenviet/6.jpg" alt="image6"></div>
+            <div class="row"><img id = "7" src = "xuyenviet/7.jpg" alt="image7"></div>
+            <div class="row"><img id = "8" src = "xuyenviet/8.jpg" alt="image8"></div>
+            <div class="row"><img id = "9" src = "xuyenviet/9.jpg" alt="image9"></div>
+            <div class="row"><img id = "10" src = "xuyenviet/10.jpg" alt="image10"></div>
+            <div class="row"><img id = "11" src = "xuyenviet/11.jpg" alt="image11"></div>
+          </div>
+
+    <br>
+    <div id="mxh">
+    <a href="https://www.facebook.com/HoangCuongITMO/"><img src = "icon/facebook.png" alt="Face width="40" height="40"></a>
+    <a href="https://www.facebook.com/HoangCuongITMO/"><img src = "icon/instagram.png" alt="Insta" width="40" height="40"></a>
+    <a href="https://www.facebook.com/HoangCuongITMO/"><img src = "icon/skype.png" alt="skype" width="40" height="40"></a>
+    </div>
+    <hr>
+    
+    <a href=#heading1>First WEB</a>
+    <footer>@HoangCuong</footer>
+    <script src="gallery.js"></script>
+
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
+
+  <script>
+      for (let i = 1; i <= 11; i++) {
+          var modal = document.getElementById("myModal");
+          var img = document.getElementById("" + i);
+          var modalImg = document.getElementById("img01");
+          var captionText = document.getElementById("caption");
+          img.onclick = function(){
+              modal.style.display = "block";
+              modalImg.src = this.src;
+              captionText.innerHTML = this.alt;
+          }
+      }
+          var span = document.getElementsByClassName("close")[0];
+          span.onclick = function() { 
+          modal.style.display = "none";
+          }
+  </script>   
+
+    </body>
+</html>
